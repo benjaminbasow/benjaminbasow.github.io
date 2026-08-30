@@ -1,6 +1,6 @@
-# Alignment fix
+# Spacing adjustment
 
-- CV now uses the exact same `.container` as every other section.
-- Navbar height reduced to 46px.
-- Hero begins only 6px below the navbar.
-- Removed top margin from the subject line.
+Restored the previous, more comfortable header/hero spacing:
+- 54px navigation height
+- 20px hero top padding
+- CV alignment fix retained

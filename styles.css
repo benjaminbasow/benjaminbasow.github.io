@@ -48,7 +48,7 @@ a {
 }
 
 .nav-wrap {
-  min-height: 46px;
+  min-height: 54px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .hero {
-  padding: 6px 0 55px;
+  padding: 20px 0 90px;
   background:
     radial-gradient(circle at top right, rgba(44,79,59,0.10), transparent 34%),
     var(--bg);
@@ -307,7 +307,7 @@ code {
   }
 
   .hero {
-    padding-top: 6px;
+    padding-top: 20px;
   }
 
   .hero-grid,
