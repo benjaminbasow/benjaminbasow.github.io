@@ -1,8 +1,8 @@
 # Benjamin Park Basow Academic Website
 
-Updates:
-- Removed the small top-left Benjamin Park Basow header text
-- Subjects above the large name now read:
-  Health Economics · Applied Econometrics · Microeconomics · Health Policy
-- Reduced the blank space between the top navigation bar and the large name area by about half
-- Existing CV · Teaching · Research · Contact navigation retained
+Alignment correction:
+- Top navigation now begins on the exact same left margin as the main page text
+- Removed the empty spacer that was pushing navigation to the right
+- CV now uses the same left edge as Teaching, Research, Contact, and the hero
+- Header height reduced
+- Hero top padding reduced to 20px so the large-name area sits directly below the header
