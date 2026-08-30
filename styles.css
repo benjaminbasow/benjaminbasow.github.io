@@ -444,3 +444,20 @@ footer {
 #teaching {
   padding-top: 10px !important;
 }
+
+
+/* Pull CV and Teaching fully upward */
+#cv,
+#teaching {
+  padding-top: 0 !important;
+}
+
+.cv-items {
+  margin-top: 18px;
+}
+
+.cv-items p {
+  margin: 0 0 8px;
+  color: var(--accent) !important;
+  font-weight: 700;
+}
