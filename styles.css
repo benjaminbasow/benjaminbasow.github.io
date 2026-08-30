@@ -538,3 +538,38 @@ footer {
   margin-top: 0 !important;
   padding-top: 42px !important;
 }
+
+
+/* Structural spacing fix */
+.hero {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.hero-to-cv-space {
+  display: block !important;
+  height: 48px !important;
+  background: #ffffff !important;
+}
+
+#cv.compact-cv {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#cv .cv-items,
+#cv .cv-items p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.cv-to-research-space {
+  display: block !important;
+  height: 70px !important;
+  background: #ffffff !important;
+}
+
+#research.compact-research {
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
