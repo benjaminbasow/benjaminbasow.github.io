@@ -461,3 +461,17 @@ footer {
   color: var(--accent) !important;
   font-weight: 700;
 }
+
+
+/* Halve the major vertical gaps around CV */
+.hero {
+  padding-bottom: 45px !important;
+}
+
+#cv {
+  padding-bottom: 47px !important;
+}
+
+#research {
+  padding-top: 47px !important;
+}
