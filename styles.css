@@ -324,3 +324,19 @@ code {
     flex-direction: column;
   }
 }
+
+
+.contact-details p {
+  margin: 0 0 8px;
+}
+
+.contact-details a {
+  color: #ffffff;
+  font-weight: 750;
+  text-underline-offset: 3px;
+}
+
+.placeholder {
+  color: #b7cabc;
+  font-style: italic;
+}

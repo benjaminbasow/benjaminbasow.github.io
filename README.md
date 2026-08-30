@@ -1,8 +1,17 @@
 # Benjamin Park Basow Academic Website
 
-This version uses the exact CSS/layout language from the original first design.
+Original first-design layout with populated profile card and contact section.
 
-Navigation:
-CV · Teaching · Research · Contact
+BB card:
+- Benjamin Park Basow
+- PhD Candidate in Economics
+- Colorado State University
+- Department of Economics
+- Health Economics
+- Applied Microeconomics
 
-The content areas are intentionally blank except for the section headings.
+Contact section:
+- Name and academic affiliation
+- GitHub
+- Placeholder for email
+- Placeholder for LinkedIn
