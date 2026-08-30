@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --line: #d6d6d6;
+  --max: 1040px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+a {
+  color: var(--text);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.container {
+  width: min(calc(100% - 48px), var(--max));
+  margin: 0 auto;
+}
+
+.content-width {
+  max-width: 760px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--text);
+  background: #fff;
+}
+
+.header-inner {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.affiliation {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.88rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 105px 0 95px;
+}
+
+.hero-inner {
+  max-width: 850px;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(3.6rem, 8vw, 6.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.institution {
+  margin: 2px 0 0;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.section {
+  padding: 72px 0;
+  min-height: 220px;
+}
+
+.section-rule {
+  border-top: 1px solid var(--line);
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+footer {
+  border-top: 1px solid var(--text);
+  padding: 28px 0 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    padding: 18px 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 72px 0 64px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+}
