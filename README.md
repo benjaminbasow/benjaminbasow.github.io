@@ -1,17 +1,12 @@
 # Benjamin Park Basow Academic Website
 
-Original first-design layout with populated profile card and contact section.
+Original first-design styling with the BB profile card removed.
 
-BB card:
-- Benjamin Park Basow
-- PhD Candidate in Economics
+Hero labels:
+- PhD Candidate
 - Colorado State University
 - Department of Economics
-- Health Economics
-- Applied Microeconomics
+- College of Liberal Arts
 
-Contact section:
-- Name and academic affiliation
-- GitHub
-- Placeholder for email
-- Placeholder for LinkedIn
+Navigation remains:
+CV · Teaching · Research · Contact
