@@ -475,3 +475,25 @@ footer,
 #cv .cv-items p:last-child {
   margin-bottom: 0 !important;
 }
+
+
+/* Final spacing values — cache-busted in index.html */
+.hero {
+  padding-bottom: 38px !important;
+}
+
+#cv.compact-cv {
+  padding-top: 0 !important;
+  padding-bottom: 70px !important;
+  margin: 0 !important;
+}
+
+#research.compact-research {
+  padding-top: 0 !important;
+  margin: 0 !important;
+}
+
+.hero .subtitle,
+#cv .cv-items p:last-child {
+  margin-bottom: 0 !important;
+}
