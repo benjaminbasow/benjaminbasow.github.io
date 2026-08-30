@@ -1,12 +1,8 @@
-# Benjamin Basow Academic Website
+# Benjamin Park Basow Academic Website
 
-Minimal black-and-white academic GitHub Pages site.
+This version returns to the original website design and formatting.
 
-Navigation order:
+Navigation:
 CV · Teaching · Research · Contact
 
-All four sections are intentionally blank except for their headings.
-
-## Update the live site
-Replace the existing `index.html` and `styles.css` in the
-`benjaminbasow.github.io` repository with these files and commit the changes.
+All four content sections are intentionally blank except for their headings.
