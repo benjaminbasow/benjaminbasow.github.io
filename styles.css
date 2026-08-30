@@ -391,3 +391,10 @@ footer {
 #contact.dark {
   background: var(--dark) !important;
 }
+
+
+.working-paper-text {
+  margin-top: 16px;
+  color: var(--accent) !important;
+  font-weight: 700;
+}
