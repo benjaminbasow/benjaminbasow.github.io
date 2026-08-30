@@ -1,8 +1,6 @@
-# Benjamin Park Basow Academic Website
+# Alignment fix
 
-Alignment correction:
-- Top navigation now begins on the exact same left margin as the main page text
-- Removed the empty spacer that was pushing navigation to the right
-- CV now uses the same left edge as Teaching, Research, Contact, and the hero
-- Header height reduced
-- Hero top padding reduced to 20px so the large-name area sits directly below the header
+- CV now uses the exact same `.container` as every other section.
+- Navbar height reduced to 46px.
+- Hero begins only 6px below the navbar.
+- Removed top margin from the subject line.

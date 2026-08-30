@@ -48,7 +48,7 @@ a {
 }
 
 .nav-wrap {
-  min-height: 54px;
+  min-height: 46px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .hero {
-  padding: 20px 0 90px;
+  padding: 6px 0 55px;
   background:
     radial-gradient(circle at top right, rgba(44,79,59,0.10), transparent 34%),
     var(--bg);
@@ -307,7 +307,7 @@ code {
   }
 
   .hero {
-    padding-top: 20px;
+    padding-top: 6px;
   }
 
   .hero-grid,
@@ -340,4 +340,23 @@ code {
 .placeholder {
   color: #b7cabc;
   font-style: italic;
+}
+
+.hero .eyebrow {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hero h1 {
+  margin-top: 0;
+}
+
+#cv > .container,
+#teaching > .container,
+#research > .container,
+#contact > .container {
+  width: min(calc(100% - 40px), var(--max));
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
 }
