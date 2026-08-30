@@ -398,3 +398,10 @@ footer {
   color: var(--accent) !important;
   font-weight: 700;
 }
+
+
+/* Tighter spacing for the short CV and Teaching sections */
+#cv,
+#teaching {
+  padding-top: 60px;
+}
