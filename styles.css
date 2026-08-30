@@ -400,17 +400,40 @@ footer {
 }
 
 
-/* Tighter spacing for the short CV and Teaching sections */
-#cv,
-#teaching {
-  padding-top: 60px;
+/* Current layout spacing */
+.cv-items {
+  margin-top: 18px;
 }
 
+.cv-items p {
+  margin: 0 0 8px;
+  color: var(--accent) !important;
+  font-weight: 700;
+}
 
-/* Contact section now matches the rest of the white site */
+.working-paper-text {
+  margin-top: 16px;
+  color: var(--accent) !important;
+  font-weight: 700;
+}
+
+/* Entire site stays white */
+html,
+body,
+.site-header,
+.hero,
+.section,
+.section.alt,
+main,
+footer,
 #contact,
 #contact.dark {
   background: #ffffff !important;
+  background-image: none !important;
+}
+
+#contact,
+#contact.dark {
   color: var(--text) !important;
 }
 
@@ -424,152 +447,31 @@ footer {
   color: var(--accent) !important;
 }
 
-
-/* Further tighten CV and Teaching vertical spacing */
-#cv,
-#teaching {
-  padding-top: 30px !important;
+/* Exact requested vertical spacing */
+.hero {
+  padding-top: 20px !important;
+  padding-bottom: 38px !important;
 }
 
+.hero .subtitle {
+  margin-bottom: 0 !important;
+}
 
-/* Final small upward adjustment for CV and Teaching */
-#cv,
+#cv.compact-cv {
+  padding-top: 0 !important;
+  padding-bottom: 62px !important;
+  margin: 0 !important;
+}
+
+#research.compact-research {
+  padding-top: 0 !important;
+  margin: 0 !important;
+}
+
 #teaching {
   padding-top: 20px !important;
 }
 
-
-/* Move CV and Teaching closer to the preceding content */
-#cv,
-#teaching {
-  padding-top: 10px !important;
-}
-
-
-/* Pull CV and Teaching fully upward */
-#cv,
-#teaching {
-  padding-top: 0 !important;
-}
-
-.cv-items {
-  margin-top: 18px;
-}
-
-.cv-items p {
-  margin: 0 0 8px;
-  color: var(--accent) !important;
-  font-weight: 700;
-}
-
-
-/* Halve the major vertical gaps around CV */
-.hero {
-  padding-bottom: 45px !important;
-}
-
-#cv {
-  padding-bottom: 47px !important;
-}
-
-#research {
-  padding-top: 47px !important;
-}
-
-
-/* Exact gap control: remove adjoining section padding rather than changing only one side */
-.hero {
-  padding-bottom: 28px !important;
-}
-
-#cv.compact-cv {
-  padding-top: 0 !important;
-  padding-bottom: 28px !important;
-}
-
-#research.compact-research {
-  padding-top: 0 !important;
-}
-
-/* Prevent heading/item margins from recreating the apparent gap */
-#cv h2 {
-  margin-top: 0 !important;
-}
-
-#research h2 {
-  margin-top: 0 !important;
-}
-
-
-/* Force the two requested gaps smaller */
-.hero {
-  padding-bottom: 0 !important;
-}
-
-#cv.compact-cv {
-  padding-top: 0 !important;
-  margin-top: -10px !important;
-  padding-bottom: 0 !important;
-}
-
-#research.compact-research {
-  padding-top: 0 !important;
-  margin-top: -10px !important;
-}
-
-/* Remove bottom margins that can visually recreate the gap */
-#cv .cv-items {
-  margin-bottom: 0 !important;
-}
-
 #cv .cv-items p:last-child {
   margin-bottom: 0 !important;
-}
-
-
-/* Rebalance CV and Research spacing */
-#cv.compact-cv {
-  margin-top: 38px !important; /* approximately half an inch lower */
-  padding-top: 0 !important;
-  padding-bottom: 48px !important;
-}
-
-#research.compact-research {
-  margin-top: 0 !important;
-  padding-top: 42px !important;
-}
-
-
-/* Structural spacing fix */
-.hero {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.hero-to-cv-space {
-  display: block !important;
-  height: 48px !important;
-  background: #ffffff !important;
-}
-
-#cv.compact-cv {
-  margin: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-#cv .cv-items,
-#cv .cv-items p:last-child {
-  margin-bottom: 0 !important;
-}
-
-.cv-to-research-space {
-  display: block !important;
-  height: 70px !important;
-  background: #ffffff !important;
-}
-
-#research.compact-research {
-  margin: 0 !important;
-  padding-top: 0 !important;
 }
