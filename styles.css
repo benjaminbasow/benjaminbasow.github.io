@@ -499,3 +499,29 @@ footer {
 #research h2 {
   margin-top: 0 !important;
 }
+
+
+/* Force the two requested gaps smaller */
+.hero {
+  padding-bottom: 0 !important;
+}
+
+#cv.compact-cv {
+  padding-top: 0 !important;
+  margin-top: -10px !important;
+  padding-bottom: 0 !important;
+}
+
+#research.compact-research {
+  padding-top: 0 !important;
+  margin-top: -10px !important;
+}
+
+/* Remove bottom margins that can visually recreate the gap */
+#cv .cv-items {
+  margin-bottom: 0 !important;
+}
+
+#cv .cv-items p:last-child {
+  margin-bottom: 0 !important;
+}
