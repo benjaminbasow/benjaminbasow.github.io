@@ -423,3 +423,10 @@ footer {
 #contact.dark a {
   color: var(--accent) !important;
 }
+
+
+/* Further tighten CV and Teaching vertical spacing */
+#cv,
+#teaching {
+  padding-top: 30px !important;
+}
