@@ -372,3 +372,22 @@ code {
 }
 
 
+
+
+/* Force a uniform white background everywhere except the Contact section */
+html,
+body,
+.site-header,
+.hero,
+.section,
+.section.alt,
+main,
+footer {
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+#contact,
+#contact.dark {
+  background: var(--dark) !important;
+}
