@@ -405,3 +405,21 @@ footer {
 #teaching {
   padding-top: 60px;
 }
+
+
+/* Contact section now matches the rest of the white site */
+#contact,
+#contact.dark {
+  background: #ffffff !important;
+  color: var(--text) !important;
+}
+
+#contact p,
+#contact.dark p {
+  color: #4d5256 !important;
+}
+
+#contact a,
+#contact.dark a {
+  color: var(--accent) !important;
+}
