@@ -475,3 +475,27 @@ footer {
 #research {
   padding-top: 47px !important;
 }
+
+
+/* Exact gap control: remove adjoining section padding rather than changing only one side */
+.hero {
+  padding-bottom: 28px !important;
+}
+
+#cv.compact-cv {
+  padding-top: 0 !important;
+  padding-bottom: 28px !important;
+}
+
+#research.compact-research {
+  padding-top: 0 !important;
+}
+
+/* Prevent heading/item margins from recreating the apparent gap */
+#cv h2 {
+  margin-top: 0 !important;
+}
+
+#research h2 {
+  margin-top: 0 !important;
+}
