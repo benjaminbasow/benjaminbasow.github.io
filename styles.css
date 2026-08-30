@@ -525,3 +525,16 @@ footer {
 #cv .cv-items p:last-child {
   margin-bottom: 0 !important;
 }
+
+
+/* Rebalance CV and Research spacing */
+#cv.compact-cv {
+  margin-top: 38px !important; /* approximately half an inch lower */
+  padding-top: 0 !important;
+  padding-bottom: 48px !important;
+}
+
+#research.compact-research {
+  margin-top: 0 !important;
+  padding-top: 42px !important;
+}
