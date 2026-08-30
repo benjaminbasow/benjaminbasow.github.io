@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 .hero {
-  padding: 105px 0 90px;
+  padding: 52px 0 90px;
   background:
     radial-gradient(circle at top right, rgba(44,79,59,0.10), transparent 34%),
     var(--bg);
@@ -306,7 +306,7 @@ code {
   }
 
   .hero {
-    padding-top: 70px;
+    padding-top: 35px;
   }
 
   .hero-grid,

@@ -1,12 +1,8 @@
 # Benjamin Park Basow Academic Website
 
-Original first-design styling with the BB profile card removed.
-
-Hero labels:
-- PhD Candidate
-- Colorado State University
-- Department of Economics
-- College of Liberal Arts
-
-Navigation remains:
-CV · Teaching · Research · Contact
+Updates:
+- Removed the small top-left Benjamin Park Basow header text
+- Subjects above the large name now read:
+  Health Economics · Applied Econometrics · Microeconomics · Health Policy
+- Reduced the blank space between the top navigation bar and the large name area by about half
+- Existing CV · Teaching · Research · Contact navigation retained
