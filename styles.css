@@ -430,3 +430,10 @@ footer {
 #teaching {
   padding-top: 30px !important;
 }
+
+
+/* Final small upward adjustment for CV and Teaching */
+#cv,
+#teaching {
+  padding-top: 20px !important;
+}
