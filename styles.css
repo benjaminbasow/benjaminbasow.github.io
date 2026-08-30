@@ -362,17 +362,7 @@ code {
 }
 
 
-.paper-author {
-  margin: 4px 0 2px;
-  font-weight: 700;
-  color: var(--text) !important;
-}
 
-.abstract-label {
-  margin: 20px 0 6px;
-  font-weight: 800;
-  color: var(--text) !important;
-}
 
 .abstract-text {
   max-width: 900px;
@@ -381,4 +371,12 @@ code {
 
 .research-paper {
   margin-top: 28px;
+}
+
+
+.working-paper-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
