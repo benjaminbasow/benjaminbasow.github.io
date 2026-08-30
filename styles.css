@@ -3,7 +3,7 @@
 }
 
 :root {
-  --bg: #f7f7f4;
+  --bg: #ffffff;
   --paper: #ffffff;
   --text: #1b1d1f;
   --muted: #666b70;
@@ -42,7 +42,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 247, 244, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(10px);
 }
@@ -80,9 +80,7 @@ nav a:hover {
 
 .hero {
   padding: 20px 0 90px;
-  background:
-    radial-gradient(circle at top right, rgba(44,79,59,0.10), transparent 34%),
-    var(--bg);
+  background: #ffffff;
 }
 
 .hero-grid {
