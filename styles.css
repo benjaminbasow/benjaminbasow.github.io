@@ -84,6 +84,13 @@ nav a:hover {
     var(--bg);
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+}
+
 .eyebrow,
 .section-label {
   text-transform: uppercase;
@@ -107,27 +114,72 @@ h2 {
   font-size: clamp(2rem, 4vw, 3.3rem);
   line-height: 1.12;
   letter-spacing: -0.025em;
-  margin: 0;
+  margin: 0 0 24px;
 }
 
 .subtitle {
   font-size: 1.2rem;
   color: var(--muted);
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 
 .section {
   padding: 95px 0;
-  min-height: 300px;
+  min-height: 320px;
 }
 
 .alt {
   background: var(--paper);
 }
 
+.profile-card,
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 30px;
+}
+
+.card {
+  min-height: 160px;
+}
+
+.profile-placeholder {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  margin-bottom: 28px;
+}
+
+.profile-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.profile-card p {
+  margin: 5px 0;
+  color: var(--muted);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 70px;
+  align-items: start;
+}
+
 .dark {
   background: var(--dark);
-  color: #ffffff;
+  color: #fff;
+}
+
+.dark p {
+  color: #d8ddd9;
 }
 
 .section-label.light {
@@ -162,9 +214,10 @@ footer {
     padding-top: 70px;
   }
 
-  .section {
-    min-height: 240px;
-    padding: 70px 0;
+  .hero-grid,
+  .split {
+    grid-template-columns: 1fr;
+    gap: 38px;
   }
 
   .footer-wrap {
