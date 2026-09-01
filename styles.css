@@ -718,3 +718,33 @@ footer,
 #teaching .teaching-table td:last-child {
   padding-left: 8px !important;
 }
+
+
+/* Equal spacing between Teaching subsections */
+#teaching .teaching-group,
+#teaching .teaching-group:first-of-type {
+  margin-top: 0 !important;
+  margin-bottom: 52px !important;
+}
+
+#teaching .teaching-group:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Keep Contact information directly beneath Contact heading */
+#contact .split {
+  display: block !important;
+}
+
+#contact h2 {
+  margin-bottom: 20px !important;
+}
+
+#contact .split > div,
+#contact .contact-links {
+  margin-top: 0 !important;
+}
+
+#contact p:first-of-type {
+  margin-top: 0 !important;
+}
