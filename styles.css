@@ -725,3 +725,21 @@ footer {
 #research .paper.research-paper:last-child .working-paper-text {
   margin-bottom: 0 !important;
 }
+
+
+/* Explicit final research-paper spacing fix */
+#research .paper.research-paper:nth-of-type(3) {
+  padding-bottom: 18px !important;
+  margin-bottom: 0 !important;
+}
+
+#research .paper.research-paper:nth-of-type(3) .working-paper-text {
+  display: block !important;
+  margin: 12px 0 18px 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure the bottom rule sits below that whitespace */
+#research .paper.research-paper:nth-of-type(3) {
+  border-bottom: 1px solid var(--line) !important;
+}
