@@ -1003,3 +1003,25 @@ footer {
   margin: 0 !important;
   padding: 16px 0 !important;
 }
+
+
+/* Rebalance after force-fixed spacing */
+
+/* Keep Research in its current visual position, but restore enough flow space
+   so Teaching no longer overlaps the Research section. */
+#research.compact-research {
+  transform: translateY(-18px) !important;
+  margin-bottom: 36px !important;
+}
+
+/* Pull Teaching up less aggressively to preserve a clean gap after Research. */
+#teaching {
+  transform: translateY(-150px) !important;
+  margin-bottom: -150px !important;
+}
+
+/* Move Contact up another 2.5 inches from its current position. */
+#contact,
+#contact.dark {
+  margin-top: -480px !important;
+}
