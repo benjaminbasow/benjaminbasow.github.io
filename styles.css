@@ -759,3 +759,9 @@ footer {
   transform: translateY(-6px) !important;
   margin-bottom: -6px !important;
 }
+
+/* Research up one additional 1/16 inch: total forced shift now 12px */
+#research.compact-research {
+  transform: translateY(-12px) !important;
+  margin-bottom: -12px !important;
+}
