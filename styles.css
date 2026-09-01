@@ -687,3 +687,34 @@ footer,
     margin-bottom: -110px !important;
   }
 }
+
+
+/* Fine-tune section positions */
+#research.compact-research {
+  top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+#teaching {
+  top: -168px !important;
+  margin-bottom: -168px !important;
+}
+
+
+/* Shift Students column slightly to the right */
+#teaching .teaching-table th:last-child,
+#teaching .teaching-table td:last-child {
+  padding-left: 38px !important;
+}
+
+
+/* Correct Students column position: shift left */
+#teaching .teaching-table th:nth-child(3),
+#teaching .teaching-table td:nth-child(3) {
+  width: 340px !important;
+}
+
+#teaching .teaching-table th:last-child,
+#teaching .teaching-table td:last-child {
+  padding-left: 8px !important;
+}
