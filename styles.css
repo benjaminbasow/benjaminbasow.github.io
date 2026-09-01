@@ -633,3 +633,57 @@ footer,
     min-width: 660px;
   }
 }
+
+
+/* Requested final layout adjustments */
+#research.compact-research {
+  position: relative !important;
+  top: 48px !important;          /* Research down ~0.5 inch */
+  margin-bottom: 48px !important;
+}
+
+#teaching {
+  position: relative !important;
+  top: -192px !important;        /* Teaching up ~2 inches */
+  margin-bottom: -192px !important;
+}
+
+#contact,
+#contact.dark {
+  position: relative !important;
+  top: -192px !important;        /* Contact up ~2 inches */
+  margin-bottom: -192px !important;
+}
+
+/* Keep Students closer to the course information instead of at far right */
+#teaching .teaching-table {
+  width: auto !important;
+  min-width: 760px;
+}
+
+#teaching .teaching-table th:nth-child(3),
+#teaching .teaching-table td:nth-child(3) {
+  width: 390px !important;
+}
+
+#teaching .teaching-table th:last-child,
+#teaching .teaching-table td:last-child {
+  width: 90px !important;
+  text-align: left !important;
+  padding-left: 18px !important;
+  padding-right: 0 !important;
+}
+
+@media (max-width: 780px) {
+  #research.compact-research {
+    top: 32px !important;
+    margin-bottom: 32px !important;
+  }
+
+  #teaching,
+  #contact,
+  #contact.dark {
+    top: -110px !important;
+    margin-bottom: -110px !important;
+  }
+}
