@@ -743,3 +743,10 @@ footer {
 #research .paper.research-paper:nth-of-type(3) {
   border-bottom: 1px solid var(--line) !important;
 }
+
+/* Research up another 1/16 inch (~6px) */
+#research.compact-research {
+  position: relative !important;
+  top: -6px !important;
+  margin-bottom: -6px !important;
+}
