@@ -715,3 +715,13 @@ footer {
     padding-top: 20px !important;
   }
 }
+
+
+/* Match whitespace beneath the final Working Paper PDF to the other paper separators */
+#research .paper.research-paper:last-child {
+  padding-bottom: 18px !important;
+}
+
+#research .paper.research-paper:last-child .working-paper-text {
+  margin-bottom: 0 !important;
+}
