@@ -750,3 +750,12 @@ footer {
   top: -6px !important;
   margin-bottom: -6px !important;
 }
+
+
+/* Force Research visibly up another 1/16 inch (~6px) */
+#research.compact-research {
+  position: relative !important;
+  top: auto !important;
+  transform: translateY(-6px) !important;
+  margin-bottom: -6px !important;
+}
