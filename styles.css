@@ -512,26 +512,53 @@ footer,
 .teaching-group h3 { margin-bottom: 10px; }
 
 
-/* Move Research section upward by approximately half an inch */
+/* =========================================================
+   CLEAN FINAL LAYOUT — replaces all old spacing experiments
+   ========================================================= */
+
+/* Research */
 #research.compact-research {
-  position: relative !important;
-  top: -48px !important;
-  margin-bottom: -48px !important;
+  position: static !important;
+  top: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 34px !important;
 }
 
+#research .paper.research-paper {
+  margin: 0 !important;
+  padding-top: 28px !important;
+  padding-bottom: 0 !important;
+}
 
-/* Polished Teaching section only */
+#research .paper.research-paper + .paper.research-paper {
+  margin-top: 18px !important;
+}
+
+#research .working-paper-text {
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Teaching — normal document flow, no transform/overlap */
 #teaching {
-  padding-top: 72px !important;
-  padding-bottom: 92px !important;
+  position: static !important;
+  top: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding-top: 38px !important;
+  padding-bottom: 30px !important;
 }
 
 #teaching > .container > h2 {
   margin-bottom: 42px !important;
 }
 
-#teaching .teaching-group {
-  margin: 0 0 58px !important;
+#teaching .teaching-group,
+#teaching .teaching-group:first-of-type {
+  margin: 0 0 52px !important;
 }
 
 #teaching .teaching-group:last-child {
@@ -556,19 +583,17 @@ footer,
 }
 
 #teaching .teaching-table {
-  width: 100%;
+  width: auto !important;
+  min-width: 720px;
   border-collapse: collapse;
   table-layout: auto;
   font-size: 0.94rem;
 }
 
-#teaching .teaching-table thead {
-  border-bottom: 2px solid var(--text);
-}
-
 #teaching .teaching-table th {
   padding: 10px 18px 10px 0 !important;
   border: 0 !important;
+  border-bottom: 2px solid var(--text) !important;
   text-align: left;
   color: var(--muted);
   font-size: 0.72rem;
@@ -604,134 +629,31 @@ footer,
 
 #teaching .teaching-table th:nth-child(3),
 #teaching .teaching-table td:nth-child(3) {
-  width: auto;
+  width: 330px !important;
 }
 
 #teaching .teaching-table th:last-child,
 #teaching .teaching-table td:last-child {
-  width: 85px;
+  width: 85px !important;
+  text-align: left !important;
+  padding-left: 6px !important;
   padding-right: 0 !important;
-  text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-@media (max-width: 700px) {
-  #teaching {
-    padding-top: 55px !important;
-    padding-bottom: 70px !important;
-  }
-
-  #teaching > .container > h2 {
-    margin-bottom: 34px !important;
-  }
-
-  #teaching .teaching-group {
-    margin-bottom: 46px !important;
-  }
-
-  #teaching .teaching-table {
-    min-width: 660px;
-  }
-}
-
-
-/* Requested final layout adjustments */
-#research.compact-research {
-  position: relative !important;
-  top: 48px !important;          /* Research down ~0.5 inch */
-  margin-bottom: 48px !important;
-}
-
-#teaching {
-  position: relative !important;
-  top: -192px !important;        /* Teaching up ~2 inches */
-  margin-bottom: -192px !important;
-}
-
+/* Contact — immediately follows Teaching, eliminating the huge empty gap */
 #contact,
 #contact.dark {
-  position: relative !important;
-  top: -192px !important;        /* Contact up ~2 inches */
-  margin-bottom: -192px !important;
+  position: static !important;
+  top: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding-top: 24px !important;
+  padding-bottom: 28px !important;
+  background: #ffffff !important;
+  color: var(--text) !important;
 }
 
-/* Keep Students closer to the course information instead of at far right */
-#teaching .teaching-table {
-  width: auto !important;
-  min-width: 760px;
-}
-
-#teaching .teaching-table th:nth-child(3),
-#teaching .teaching-table td:nth-child(3) {
-  width: 390px !important;
-}
-
-#teaching .teaching-table th:last-child,
-#teaching .teaching-table td:last-child {
-  width: 90px !important;
-  text-align: left !important;
-  padding-left: 18px !important;
-  padding-right: 0 !important;
-}
-
-@media (max-width: 780px) {
-  #research.compact-research {
-    top: 32px !important;
-    margin-bottom: 32px !important;
-  }
-
-  #teaching,
-  #contact,
-  #contact.dark {
-    top: -110px !important;
-    margin-bottom: -110px !important;
-  }
-}
-
-
-/* Fine-tune section positions */
-#research.compact-research {
-  top: 24px !important;
-  margin-bottom: 24px !important;
-}
-
-#teaching {
-  top: -168px !important;
-  margin-bottom: -168px !important;
-}
-
-
-/* Shift Students column slightly to the right */
-#teaching .teaching-table th:last-child,
-#teaching .teaching-table td:last-child {
-  padding-left: 38px !important;
-}
-
-
-/* Correct Students column position: shift left */
-#teaching .teaching-table th:nth-child(3),
-#teaching .teaching-table td:nth-child(3) {
-  width: 340px !important;
-}
-
-#teaching .teaching-table th:last-child,
-#teaching .teaching-table td:last-child {
-  padding-left: 8px !important;
-}
-
-
-/* Equal spacing between Teaching subsections */
-#teaching .teaching-group,
-#teaching .teaching-group:first-of-type {
-  margin-top: 0 !important;
-  margin-bottom: 52px !important;
-}
-
-#teaching .teaching-group:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* Keep Contact information directly beneath Contact heading */
 #contact .split {
   display: block !important;
 }
@@ -741,287 +663,55 @@ footer,
 }
 
 #contact .split > div,
-#contact .contact-links {
-  margin-top: 0 !important;
-}
-
+#contact .contact-links,
 #contact p:first-of-type {
   margin-top: 0 !important;
 }
 
+#contact p,
+#contact.dark p {
+  color: #4d5256 !important;
+}
 
-/* Final requested refinements */
-#research.compact-research {
-  top: 0 !important;
+#contact a,
+#contact.dark a {
+  color: var(--accent) !important;
+}
+
+/* No trailing blank page area */
+html,
+body {
   margin-bottom: 0 !important;
-}
-
-/* University Funded Economics Tutor section */
-#tutoring {
-  padding-top: 68px !important;
-  padding-bottom: 70px !important;
-}
-
-#tutoring > .container > h2 {
-  margin-bottom: 28px !important;
-}
-
-#tutoring .tutor-table-wrap {
-  width: 100%;
-  margin: 0 !important;
-  overflow-x: auto;
-}
-
-#tutoring .tutor-table {
-  width: auto !important;
-  min-width: 760px;
-  border-collapse: collapse;
-  font-size: 0.94rem;
-}
-
-#tutoring .tutor-table th {
-  padding: 10px 18px 10px 0 !important;
-  border-bottom: 2px solid var(--text) !important;
-  text-align: left;
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.10em;
-  white-space: nowrap;
-}
-
-#tutoring .tutor-table td {
-  padding: 13px 18px 13px 0 !important;
-  border-bottom: 1px solid var(--line) !important;
-  vertical-align: middle;
-  color: #3f4448;
-}
-
-#tutoring .tutor-table tbody tr:last-child td {
-  border-bottom: 0 !important;
-}
-
-#tutoring .tutor-table th:first-child,
-#tutoring .tutor-table td:first-child {
-  width: 145px;
-  white-space: nowrap;
-}
-
-#tutoring .tutor-table th:nth-child(2),
-#tutoring .tutor-table td:nth-child(2) {
-  width: 165px;
-  white-space: nowrap;
-  font-weight: 650;
-}
-
-#tutoring .tutor-table th:nth-child(3),
-#tutoring .tutor-table td:nth-child(3) {
-  width: 340px;
-}
-
-#tutoring .tutor-table th:last-child,
-#tutoring .tutor-table td:last-child {
-  width: 90px;
-  text-align: left;
-  padding-left: 8px !important;
-  padding-right: 0 !important;
-}
-
-/* Trim excess white space at the bottom of the page */
-#contact,
-#contact.dark {
-  padding-bottom: 42px !important;
+  padding-bottom: 0 !important;
 }
 
 footer {
-  padding-top: 18px !important;
-  padding-bottom: 18px !important;
-  margin-bottom: 0 !important;
-}
-
-body {
-  padding-bottom: 0 !important;
+  position: static !important;
+  margin: 0 !important;
+  padding: 14px 0 !important;
 }
 
 @media (max-width: 700px) {
-  #tutoring {
-    padding-top: 52px !important;
-    padding-bottom: 58px !important;
+  #research.compact-research {
+    padding-bottom: 28px !important;
   }
 
-  #tutoring .tutor-table {
+  #teaching {
+    padding-top: 34px !important;
+    padding-bottom: 26px !important;
+  }
+
+  #teaching .teaching-group,
+  #teaching .teaching-group:first-of-type {
+    margin-bottom: 44px !important;
+  }
+
+  #teaching .teaching-table {
     min-width: 660px;
   }
-}
 
-
-/* Latest position refinements */
-#research.compact-research {
-  position: relative !important;
-  top: -6px !important;
-  margin-bottom: -6px !important;
-}
-
-#teaching {
-  position: relative !important;
-  top: -216px !important;
-  margin-bottom: -216px !important;
-}
-
-/* Tutor is now a standard Teaching subsection */
-#teaching .teaching-group:last-child {
-  margin-bottom: 0 !important;
-}
-
-
-/* Fix bottom-page white space without changing the visible Contact position */
-#contact,
-#contact.dark {
-  position: static !important;
-  top: auto !important;
-  margin-top: -192px !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 28px !important;
-}
-
-footer {
-  position: static !important;
-  margin: 0 !important;
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
-}
-
-html,
-body {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-body > :last-child {
-  margin-bottom: 0 !important;
-}
-
-
-/* Latest spacing refinements */
-
-/* Remove excess space after Working Paper PDF text */
-#research .working-paper-text {
-  margin-bottom: 0 !important;
-}
-
-#research .research-paper {
-  margin-bottom: 0 !important;
-}
-
-#research .research-paper + .research-paper {
-  margin-top: 18px !important;
-}
-
-/* Research up another 1/16 inch: -6px from previous -6px */
-#research.compact-research {
-  top: -12px !important;
-  margin-bottom: -12px !important;
-}
-
-/* Teaching up another 1/16 inch: -6px from previous -216px */
-#teaching {
-  top: -222px !important;
-  margin-bottom: -222px !important;
-}
-
-/* Contact up 2.5 inches while consuming the space in normal flow */
-#contact,
-#contact.dark {
-  position: static !important;
-  top: auto !important;
-  margin-top: -240px !important;
-  margin-bottom: 0 !important;
-}
-
-
-/* =========================================================
-   Canonical spacing fix — these rules intentionally override
-   all earlier experimental spacing rules.
-   ========================================================= */
-
-/* Research: move the visible section up another 1/16 inch */
-#research.compact-research {
-  position: relative !important;
-  top: auto !important;
-  transform: translateY(-18px) !important;
-  margin-top: 0 !important;
-  margin-bottom: -18px !important;
-  padding-top: 0 !important;
-}
-
-/* Remove the real whitespace below Working Paper PDF labels */
-#research .paper.research-paper {
-  margin: 0 !important;
-  padding-top: 28px !important;
-  padding-bottom: 0 !important;
-}
-
-#research .paper.research-paper + .paper.research-paper {
-  margin-top: 18px !important;
-}
-
-#research .working-paper-text {
-  margin-top: 12px !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Teaching: move visible section up another 1/16 inch */
-#teaching {
-  position: relative !important;
-  top: auto !important;
-  transform: translateY(-228px) !important;
-  margin-top: 0 !important;
-  margin-bottom: -228px !important;
-}
-
-/* Contact: move the section upward by 2.5 inches in document flow */
-#contact,
-#contact.dark {
-  position: static !important;
-  top: auto !important;
-  transform: none !important;
-  margin-top: -240px !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 28px !important;
-}
-
-/* No trailing page gap */
-html,
-body {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-footer {
-  margin: 0 !important;
-  padding: 16px 0 !important;
-}
-
-
-/* Rebalance after force-fixed spacing */
-
-/* Keep Research in its current visual position, but restore enough flow space
-   so Teaching no longer overlaps the Research section. */
-#research.compact-research {
-  transform: translateY(-18px) !important;
-  margin-bottom: 36px !important;
-}
-
-/* Pull Teaching up less aggressively to preserve a clean gap after Research. */
-#teaching {
-  transform: translateY(-150px) !important;
-  margin-bottom: -150px !important;
-}
-
-/* Move Contact up another 2.5 inches from its current position. */
-#contact,
-#contact.dark {
-  margin-top: -480px !important;
+  #contact,
+  #contact.dark {
+    padding-top: 20px !important;
+  }
 }
