@@ -748,3 +748,109 @@ footer,
 #contact p:first-of-type {
   margin-top: 0 !important;
 }
+
+
+/* Final requested refinements */
+#research.compact-research {
+  top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* University Funded Economics Tutor section */
+#tutoring {
+  padding-top: 68px !important;
+  padding-bottom: 70px !important;
+}
+
+#tutoring > .container > h2 {
+  margin-bottom: 28px !important;
+}
+
+#tutoring .tutor-table-wrap {
+  width: 100%;
+  margin: 0 !important;
+  overflow-x: auto;
+}
+
+#tutoring .tutor-table {
+  width: auto !important;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+
+#tutoring .tutor-table th {
+  padding: 10px 18px 10px 0 !important;
+  border-bottom: 2px solid var(--text) !important;
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  white-space: nowrap;
+}
+
+#tutoring .tutor-table td {
+  padding: 13px 18px 13px 0 !important;
+  border-bottom: 1px solid var(--line) !important;
+  vertical-align: middle;
+  color: #3f4448;
+}
+
+#tutoring .tutor-table tbody tr:last-child td {
+  border-bottom: 0 !important;
+}
+
+#tutoring .tutor-table th:first-child,
+#tutoring .tutor-table td:first-child {
+  width: 145px;
+  white-space: nowrap;
+}
+
+#tutoring .tutor-table th:nth-child(2),
+#tutoring .tutor-table td:nth-child(2) {
+  width: 165px;
+  white-space: nowrap;
+  font-weight: 650;
+}
+
+#tutoring .tutor-table th:nth-child(3),
+#tutoring .tutor-table td:nth-child(3) {
+  width: 340px;
+}
+
+#tutoring .tutor-table th:last-child,
+#tutoring .tutor-table td:last-child {
+  width: 90px;
+  text-align: left;
+  padding-left: 8px !important;
+  padding-right: 0 !important;
+}
+
+/* Trim excess white space at the bottom of the page */
+#contact,
+#contact.dark {
+  padding-bottom: 42px !important;
+}
+
+footer {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+  margin-bottom: 0 !important;
+}
+
+body {
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 700px) {
+  #tutoring {
+    padding-top: 52px !important;
+    padding-bottom: 58px !important;
+  }
+
+  #tutoring .tutor-table {
+    min-width: 660px;
+  }
+}
