@@ -765,3 +765,24 @@ footer {
   transform: translateY(-12px) !important;
   margin-bottom: -12px !important;
 }
+
+/* Research up one more 1/16 inch: total visual shift = 18px */
+#research.compact-research {
+  transform: translateY(-18px) !important;
+  margin-bottom: -18px !important;
+}
+
+/* Fine-tune final Working Paper PDF bottom rule spacing */
+#research .paper.research-paper:nth-of-type(3) {
+  padding-bottom: 0 !important;
+}
+
+#research .paper.research-paper:nth-of-type(3) .working-paper-text {
+  margin-top: 12px !important;
+  margin-bottom: 24px !important;
+}
+
+/* Keep the final separator directly after the refined 24px breathing room */
+#research .paper.research-paper:nth-of-type(3) {
+  border-bottom: 1px solid var(--line) !important;
+}
