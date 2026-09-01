@@ -854,3 +854,50 @@ body {
     min-width: 660px;
   }
 }
+
+
+/* Latest position refinements */
+#research.compact-research {
+  position: relative !important;
+  top: -6px !important;
+  margin-bottom: -6px !important;
+}
+
+#teaching {
+  position: relative !important;
+  top: -216px !important;
+  margin-bottom: -216px !important;
+}
+
+/* Tutor is now a standard Teaching subsection */
+#teaching .teaching-group:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+/* Fix bottom-page white space without changing the visible Contact position */
+#contact,
+#contact.dark {
+  position: static !important;
+  top: auto !important;
+  margin-top: -192px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 28px !important;
+}
+
+footer {
+  position: static !important;
+  margin: 0 !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+html,
+body {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body > :last-child {
+  margin-bottom: 0 !important;
+}
