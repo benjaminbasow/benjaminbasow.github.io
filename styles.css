@@ -938,3 +938,68 @@ body > :last-child {
   margin-top: -240px !important;
   margin-bottom: 0 !important;
 }
+
+
+/* =========================================================
+   Canonical spacing fix — these rules intentionally override
+   all earlier experimental spacing rules.
+   ========================================================= */
+
+/* Research: move the visible section up another 1/16 inch */
+#research.compact-research {
+  position: relative !important;
+  top: auto !important;
+  transform: translateY(-18px) !important;
+  margin-top: 0 !important;
+  margin-bottom: -18px !important;
+  padding-top: 0 !important;
+}
+
+/* Remove the real whitespace below Working Paper PDF labels */
+#research .paper.research-paper {
+  margin: 0 !important;
+  padding-top: 28px !important;
+  padding-bottom: 0 !important;
+}
+
+#research .paper.research-paper + .paper.research-paper {
+  margin-top: 18px !important;
+}
+
+#research .working-paper-text {
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Teaching: move visible section up another 1/16 inch */
+#teaching {
+  position: relative !important;
+  top: auto !important;
+  transform: translateY(-228px) !important;
+  margin-top: 0 !important;
+  margin-bottom: -228px !important;
+}
+
+/* Contact: move the section upward by 2.5 inches in document flow */
+#contact,
+#contact.dark {
+  position: static !important;
+  top: auto !important;
+  transform: none !important;
+  margin-top: -240px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 28px !important;
+}
+
+/* No trailing page gap */
+html,
+body {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+footer {
+  margin: 0 !important;
+  padding: 16px 0 !important;
+}
